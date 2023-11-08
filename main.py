@@ -1,16 +1,16 @@
 from functions import *
 
-text_file = "This this is Is a practice test test file."
+text_file = "test.txt"
 
-# with open(text_file) as f:
-#     content = f.readlines()
+with open(text_file) as f:
+    content = f.readlines()
 
-# text = " ".join(content)
+text = "".join(content)
 
-new = remove_duplicate(text_file)
-print(new)
+new = remove_duplicate(text)
+# print(new)
 
-# with open("document_name_here", "w") as f:
-#     for line in new:
-#         f.write(line)
-#         f.write("")
+with open("cleaned_test_file", "w") as f:
+    for line in new:
+        f.write(line)
+        # f.write("")
