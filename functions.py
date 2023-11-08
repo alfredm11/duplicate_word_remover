@@ -34,3 +34,5 @@ def remove_duplicate_comma(text):
 
     sub_words = pattern.sub(r'\2', text)
     return sub_words
+
+# The script doesn't remove the duplicates like "(in, in) or (he's, he's)". But I will fix that in the future.
